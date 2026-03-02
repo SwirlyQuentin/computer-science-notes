@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e4900880c6e145ae",
+        "id": "8b3c2e73e004d154",
         "type": "tabs",
         "children": [
           {
-            "id": "fe34782264fb56b5",
+            "id": "b9cec5e9ee593bc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Concepts/DirectX.md",
+                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DirectX"
+              "title": "Basic OpenGL Demo"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 200
   },
   "right": {
     "id": "7be96393fab0afa8",
@@ -94,17 +94,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Basic OpenGL Demo"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from Basic OpenGL Demo"
             }
           },
           {
@@ -156,21 +156,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Basic OpenGL Demo"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,17 +185,31 @@
   },
   "active": "0ac020614bec69c0",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/DirectX.md",
-    "README.md",
-    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/Concepts/Clip Space.md",
+    "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
     "ComputerGraphics/Concepts/OpenGL.md",
+    "Basic Demo.md",
     "ComputerGraphics/Lectures/Introduction To Computer Graphics.md",
-    "().md",
+    "ComputerGraphics/Concepts/Projection Matrix.md",
+    "ComputerGraphics/Concepts/Frame Buffer.md",
+    "ComputerGraphics/CodeExamples",
+    "ComputerGraphics/Concepts/Raster Graphics.md",
+    "ComputerGraphics/Concepts/WPF.md",
+    "ComputerGraphics/Concepts/Double Buffer.md",
+    "Double Buffering.md",
+    "ComputerGraphics/Concepts/Display Model.md",
+    "ComputerGraphics/Concepts/Vector Graphics.md",
+    "ComputerGraphics/Concepts/SVG.md",
     "ComputerGraphics/Concepts/Application Model.md",
+    "ComputerGraphics/Concepts/Retained Mode.md",
+    "ComputerGraphics/Concepts/Scene Graph.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/Concepts/DirectX.md",
     "ComputerGraphics/Concepts/Application Database.md",
+    "README.md",
+    "().md",
     "Welcome.md",
     "ComputerGraphics/Lectures",
-    "Untitled",
     "ComputerGraphics/Concepts",
     "ComputerGraphics"
   ]

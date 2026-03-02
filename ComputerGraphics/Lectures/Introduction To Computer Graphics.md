@@ -1,13 +1,33 @@
-**Immediate Mode vs Retained Mode**
+
+### **Immediate Mode vs Retained Mode**
 
 Different techniques in drawing models
 
 [[Immediate Mode]]
 - Uses [[Application Model]]
+- Platform keeps no record of primitives that compose the scene
 
- **Raster vs Vector Graphics**
-  Raster
+[[Retained Mode]]
+- [[Application Model]] in app and [[Display Model]] in platform
+
+### **Raster vs Vector Graphics**
+  [[Raster Graphics]]
   - image represented by grid of pixels
   - jagged edges when drawing 
   - image is stored in frame buffer
   - constant time to redraw
+  - no flicker
+[[Vector Graphics]]
+- Lines drawn directly 
+- smooth lines
+- 'pure mathematics' of the model
+- slower with more elements
+- only lines possible
+
+
+### **Buffers in Raster Displays**
+
+Most all Computer Graphics are done using raster displays, the screen is represented by a 2D array of elements
+
+[[Frame Buffer]] is used to store the image about to be displayed to the screen
+
