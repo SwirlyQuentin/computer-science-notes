@@ -1,0 +1,1 @@
+All my notes for my current computer science studies :))

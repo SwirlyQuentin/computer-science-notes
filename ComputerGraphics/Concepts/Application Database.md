@@ -1,0 +1,1 @@
+The data structures inside a program where all the information about a scene is stored

@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "44c9fd2aff9f3cbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4900880c6e145ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe34782264fb56b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ComputerGraphics/Concepts/DirectX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DirectX"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "731255334c35256a",
+    "type": "split",
+    "children": [
+      {
+        "id": "664646e2f9a4f183",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ac020614bec69c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c1d4c18261fc524d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "eaf4558ac93344ef",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5
+  },
+  "right": {
+    "id": "7be96393fab0afa8",
+    "type": "split",
+    "children": [
+      {
+        "id": "340492b561a4ae5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45c2bef2dde899bc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "5de65e7ab7a8d3b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "55cc1cfc3379d658",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a0dacab1ba3c5245",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8e023c51a3779f0f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0ac020614bec69c0",
+  "lastOpenFiles": [
+    "ComputerGraphics/Concepts/DirectX.md",
+    "README.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/Concepts/OpenGL.md",
+    "ComputerGraphics/Lectures/Introduction To Computer Graphics.md",
+    "().md",
+    "ComputerGraphics/Concepts/Application Model.md",
+    "ComputerGraphics/Concepts/Application Database.md",
+    "Welcome.md",
+    "ComputerGraphics/Lectures",
+    "Untitled",
+    "ComputerGraphics/Concepts",
+    "ComputerGraphics"
+  ]
+}
