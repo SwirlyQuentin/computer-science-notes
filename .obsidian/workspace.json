@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8b3c2e73e004d154",
+        "id": "c6e1cd21229034ee",
         "type": "tabs",
         "children": [
           {
-            "id": "b9cec5e9ee593bc7",
+            "id": "adeecb6f623a8c55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
+                "file": "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic OpenGL Demo"
+              "title": "Midpoint Line Algorithm"
             }
           }
         ]
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Basic OpenGL Demo"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Basic OpenGL Demo"
+              "title": "Outgoing links"
             }
           },
           {
@@ -165,12 +163,12 @@
               "title": "Outline of Basic OpenGL Demo"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,32 +181,40 @@
       "bases:Create new base": false
     }
   },
-  "active": "0ac020614bec69c0",
+  "active": "adeecb6f623a8c55",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/Clip Space.md",
-    "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
-    "ComputerGraphics/Concepts/OpenGL.md",
-    "Basic Demo.md",
+    "ComputerGraphics/Lectures/Line Algorithms.md",
     "ComputerGraphics/Lectures/Introduction To Computer Graphics.md",
-    "ComputerGraphics/Concepts/Projection Matrix.md",
-    "ComputerGraphics/Concepts/Frame Buffer.md",
-    "ComputerGraphics/CodeExamples",
-    "ComputerGraphics/Concepts/Raster Graphics.md",
-    "ComputerGraphics/Concepts/WPF.md",
+    "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
+    "OperatingSystems/Concepts/Scheduling Algorithm.md",
+    "OperatingSystems/Concepts/Process Scheduler.md",
+    "OperatingSystems/Concepts/CPU State.md",
+    "OperatingSystems/Concepts/CPU Register.md",
+    "OperatingSystems/ToWorkOn/Stack.md",
+    "OperatingSystems/ToWorkOn/Process Suspended State.md",
+    "OperatingSystems/Concepts/Context Switch.md",
+    "OperatingSystems/Concepts/PCB.md",
+    "OperatingSystems/Concepts/Process.md",
+    "OperatingSystems/ToWorkOn/Threads.md",
+    "OperatingSystems/ToWorkOn/Execution Stack.md",
+    "ToWorkOn/Stack (Execution Stack).md",
     "ComputerGraphics/Concepts/Double Buffer.md",
-    "Double Buffering.md",
-    "ComputerGraphics/Concepts/Display Model.md",
-    "ComputerGraphics/Concepts/Vector Graphics.md",
-    "ComputerGraphics/Concepts/SVG.md",
-    "ComputerGraphics/Concepts/Application Model.md",
-    "ComputerGraphics/Concepts/Retained Mode.md",
-    "ComputerGraphics/Concepts/Scene Graph.md",
-    "ComputerGraphics/Concepts/Immediate Mode.md",
-    "ComputerGraphics/Concepts/DirectX.md",
-    "ComputerGraphics/Concepts/Application Database.md",
-    "README.md",
-    "().md",
-    "Welcome.md",
+    "OperatingSystems/Zybooks/2.1 The Process Concept.md",
+    "ToWorkOn/Process vs Program.md",
+    "OperatingSystems/ToWorkOn/IO Blocking.md",
+    "OperatingSystems/ToWorkOn/Interrupt.md",
+    "I/O Blocking.md",
+    "I",
+    "OperatingSystems/ToWorkOn/System Call.md",
+    "OperatingSystems/ToWorkOn/Time Sharing.md",
+    "OperatingSystems/ToWorkOn/Process Terminated State.md",
+    "OperatingSystems/ToWorkOn/Process New State.md",
+    "OperatingSystems/ToWorkOn/Process Blocked State.md",
+    "OperatingSystems/ToWorkOn",
+    "OperatingSystems/Zybooks",
+    "OperatingSystems/Concepts",
+    "OperatingSystems",
+    "ComputerGraphics/CodeExamples",
     "ComputerGraphics/Lectures",
     "ComputerGraphics/Concepts",
     "ComputerGraphics"
