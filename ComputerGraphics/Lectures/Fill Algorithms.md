@@ -1,0 +1,548 @@
+## 1. Types of Polygons
+
+Polygons can be categorized into three main groups depending on how their edges behave.
+
+### Convex Polygons
+
+**Definition:**  
+A polygon is **convex** if:
+
+- No edge of the polygon intersects another edge.
+- Any line drawn between two points **inside the polygon** intersects **at most two edges**.
+
+**Characteristics**
+
+- No inward “dents” in the shape.
+- Interior angles are all less than 180°.
+- **Easiest polygons to fill** using scan-line algorithms.
+
+---
+
+### Concave Polygons
+
+**Definition:**  
+A polygon is **concave** if:
+
+- Edges **do not intersect each other**.
+- A line connecting two points inside the polygon **may intersect more than two edges**.
+
+**Characteristics**
+
+- Contains at least one **inward indentation**.
+- At least one interior angle is **greater than 180°**.
+- **More difficult to fill** than convex polygons.
+
+---
+
+### Complex Polygons
+
+**Definition:**  
+A polygon is **complex** if:
+
+- **Edges are allowed to intersect each other.**
+
+**Characteristics**
+
+- Self-intersecting shape.
+- A line drawn between two interior points may intersect edges **multiple times**.
+- **Most difficult to fill**.
+
+---
+
+# Scan-Line Concept
+
+## Scan Line
+
+A **scan line** is:
+
+- A horizontal line corresponding to **a row of pixels in the window**.
+- Used to determine which pixels lie inside a polygon during filling.
+
+The algorithm processes the polygon **one scan line at a time**, typically:
+
+- **Bottom → Top**
+- **Left → Right**
+
+---
+
+# Parity Rule
+
+Parity determines whether a pixel lies **inside or outside** a polygon.
+
+## Odd Parity Test
+
+To determine if a point **P** is inside a polygon:
+
+1. Draw a line from a point **outside the polygon** to point **P**.
+2. Count how many polygon edges the line intersects.
+
+**Results**
+
+- **Odd number of intersections → Point is inside**
+- **Even number of intersections → Point is outside**
+
+### Vertex Case
+
+If the line passes exactly through a **vertex**, the intersection count increases by **2**.
+
+---
+
+# Polygon Filling Overview
+
+Polygon filling is typically done using:
+
+**Scan Lines + Parity Tests**
+
+The algorithm determines which pixels lie inside the polygon and colors them.
+
+---
+
+# Scan-Line Polygon Fill Algorithm
+
+## Step 1: Initialize All Edges
+
+At the start, the polygon is represented only by a **list of vertices**.
+
+From these vertices, we construct the **edge list**.
+
+Each **pair of adjacent vertices** forms an edge:
+
+- (v₁ → v₂)
+- (v₂ → v₃)
+- (v₃ → v₄)
+- etc.
+
+For each edge we store:
+
+- **Minimum y value** of the two vertices
+- **Maximum y value**
+- **x value corresponding to the minimum y**
+- **Slope of the edge**
+
+### Slope Calculation
+
+m = (y₀ - y₁) / (x₀ - x₁)
+
+The algorithm often stores **1/m** instead of m because it updates **x as y increases**.
+
+---
+
+# Step 2: Build the Global Edge Table (GET)
+
+The **Global Edge Table (GET)** keeps track of all edges that still need to be processed.
+
+### Ordering Rules
+
+Edges are inserted into the GET according to:
+
+1. **Increasing minimum y value**
+2. If equal, **increasing minimum x value**
+
+### Special Rules
+
+- **Horizontal edges (slope = 0)** are **not added**.
+- Store the following information for each edge:
+  - min y
+  - max y
+  - x at min y
+  - **1/m (inverse slope)**
+
+### Initialization
+
+- **Parity is initially even** because no edges have been crossed.
+- The **scan line starts at the lowest min y value** in the GET.
+
+---
+
+# Step 3: Initialize the Active Edge Table (AET)
+
+The **Active Edge Table (AET)** contains edges currently intersected by the scan line.
+
+### Procedure
+
+For the current scan line:
+
+1. Search the **Global Edge Table**.
+2. Find edges where:
+
+min_y = current scan line
+
+3. Move those edges into the **Active Edge Table**.
+
+For each edge placed in the AET, store:
+
+- max y
+- current x intersection
+- 1/m
+
+Stop when an edge has **min y greater than the current scan line**.
+
+---
+
+# Step 4: Filling the Polygon
+
+Continue processing until the **Active Edge Table becomes empty**.
+
+### For each scan line:
+
+1. **Fill pixels between pairs of intersections**
+
+   - Draw pixels from the **odd parity intersection** to the **even parity intersection**.
+
+2. **Move to the next scan line**
+
+scan_line = scan_line + 1
+
+3. **Remove completed edges**
+
+Remove edges from the AET when:
+
+max_y = current scan line
+
+4. **Update intersection points**
+
+For each remaining edge:
+
+x_new = x_old + (1 / m)
+
+5. **Add new edges**
+
+Move edges from the GET into the AET when:
+
+min_y = current scan line
+
+6. **Resort the AET**
+
+Sort edges by **increasing x value** to maintain correct intersection ordering.
+
+This step is necessary because **edges may cross as the scan line moves upward**.
+
+---
+
+## Core Idea
+
+The algorithm repeatedly:
+
+- Finds where the scan line intersects polygon edges
+- Uses **parity (odd/even crossings)** to determine interior regions
+- **Fills pixels between pairs of intersections**
+
+
+# Walkthrough
+
+Vertices:
+
+(10,10), (10,16), (16,20), (28,10), (28,16), (22,10)
+
+Assume the vertices are ordered around the polygon.
+
+---
+
+# 1. Construct Edges
+
+Edges are formed between consecutive vertices, and the final vertex connects back to the first.
+
+| Edge | Points |
+|-----|------|
+| E0 | (10,10) → (10,16) |
+| E1 | (10,16) → (16,20) |
+| E2 | (16,20) → (28,10) |
+| E3 | (28,10) → (28,16) |
+| E4 | (28,16) → (22,10) |
+| E5 | (22,10) → (10,10) |
+
+---
+
+# 2. Compute Edge Properties
+
+For each edge compute:
+
+- **y_min**
+- **y_max**
+- **x at y_min**
+- **1/m = Δx / Δy**
+
+| Edge | y_min | y_max | x_at_ymin | 1/m |
+|-----|------|------|------|------|
+| E0 | 10 | 16 | 10 | 0 |
+| E1 | 16 | 20 | 10 | 1.5 |
+| E2 | 10 | 20 | 28 | -1.2 |
+| E3 | 10 | 16 | 28 | 0 |
+| E4 | 10 | 16 | 22 | 1 |
+| E5 | 10 | 10 | — | horizontal |
+
+Horizontal edges are **ignored** in the scan-line algorithm.
+
+Remove:
+
+E5
+
+---
+
+# 3. Global Edge Table (GET)
+
+Sort remaining edges by:
+
+1. **y_min**
+2. **x_at_ymin**
+
+| Edge | y_min | y_max | x | 1/m |
+|-----|------|------|------|------|
+| E0 | 10 | 16 | 10 | 0 |
+| E4 | 10 | 16 | 22 | 1 |
+| E2 | 10 | 20 | 28 | -1.2 |
+| E3 | 10 | 16 | 28 | 0 |
+| E1 | 16 | 20 | 10 | 1.5 |
+
+---
+
+# 4. Initialize Algorithm
+
+Initial scanline:
+
+```
+y = 10
+```
+
+Active Edge Table (**AET**) initially empty.
+
+Add edges with **y_min = 10**.
+
+Initial AET:
+
+| Edge | y_max | x | 1/m |
+|-----|------|------|------|
+| E0 | 16 | 10 | 0 |
+| E4 | 16 | 22 | 1 |
+| E2 | 20 | 28 | -1.2 |
+| E3 | 16 | 28 | 0 |
+
+Sorted by **x**.
+
+---
+
+# 5. Scanline Filling
+
+The algorithm fills between **pairs of intersections** using the **odd-even parity rule**.
+
+---
+
+## Scanline y = 10
+
+Intersections:
+
+```
+10, 22, 28, 28
+```
+
+Pairs:
+
+```
+(10 → 22)
+(28 → 28)
+```
+
+Pixels filled:
+
+```
+10 → 22
+28 → 28
+```
+
+---
+
+## Update X Values
+
+Update using:
+
+```
+x_new = x_old + (1/m)
+```
+
+| Edge | x_old | 1/m | x_new |
+|-----|------|------|------|
+| E0 | 10 | 0 | 10 |
+| E4 | 22 | 1 | 23 |
+| E2 | 28 | -1.2 | 26.8 |
+| E3 | 28 | 0 | 28 |
+
+Sorted AET:
+
+```
+10, 23, 26.8, 28
+```
+
+---
+
+## Scanline y = 11
+
+Intersections:
+
+```
+10, 23, 26.8, 28
+```
+
+Fill:
+
+```
+10 → 23
+26.8 → 28
+```
+
+---
+
+## Scanline y = 12
+
+Updated intersections:
+
+```
+10, 24, 25.6, 28
+```
+
+Fill:
+
+```
+10 → 24
+25.6 → 28
+```
+
+---
+
+## Scanline y = 13
+
+Intersections:
+
+```
+10, 24.4, 25, 28
+```
+
+Fill:
+
+```
+10 → 24.4
+25 → 28
+```
+
+---
+
+## Scanline y = 14
+
+Intersections:
+
+```
+10, 23.2, 26, 28
+```
+
+Fill:
+
+```
+10 → 23.2
+26 → 28
+```
+
+---
+
+## Scanline y = 15
+
+Intersections:
+
+```
+10, 22, 27, 28
+```
+
+Fill:
+
+```
+10 → 22
+27 → 28
+```
+
+---
+
+# 6. Remove Completed Edges
+
+At next scanline **y = 16**, remove edges where:
+
+```
+y_max = 16
+```
+
+Edges removed:
+
+```
+E0
+E4
+E3
+```
+
+Remaining:
+
+```
+E2
+```
+
+---
+
+# 7. Add New Edges
+
+Edges with **y_min = 16**:
+
+```
+E1
+```
+
+New AET:
+
+| Edge | y_max | x | 1/m |
+|-----|------|------|------|
+| E1 | 20 | 10 | 1.5 |
+| E2 | 20 | ~20.8 | -1.2 |
+
+---
+
+## Scanline y = 16
+
+Intersections:
+
+```
+10, 20.8
+```
+
+Fill:
+
+```
+10 → 20.8
+```
+
+---
+
+# 8. Continue the Algorithm
+
+For each next scanline:
+
+1. Fill between intersection pairs.
+2. Update x values:
+
+```
+x = x + (1/m)
+```
+
+3. Remove edges when:
+
+```
+scanline = y_max
+```
+
+4. Insert edges when:
+
+```
+scanline = y_min
+```
+
+The algorithm continues until the **Active Edge Table becomes empty**.
+
+---
+
+# Final Result
+
+The polygon interior is filled by drawing horizontal spans between intersection pairs on each scanline using the **odd-even parity rule**.

@@ -1,5 +1,3 @@
-
-
 ### **Discrete vs Continuous Images**
 
  Two kinds of images

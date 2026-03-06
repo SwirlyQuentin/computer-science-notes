@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c6e1cd21229034ee",
+        "id": "025901df95917231",
         "type": "tabs",
         "children": [
           {
-            "id": "adeecb6f623a8c55",
+            "id": "136e7fd827bfbe5b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Midpoint Line Algorithm"
+              "title": "New tab"
             }
           }
         ]
@@ -181,11 +177,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "adeecb6f623a8c55",
+  "active": "136e7fd827bfbe5b",
   "lastOpenFiles": [
+    "ComputerGraphics/Lectures/Fill Algorithms.md",
+    "Untitled.md",
     "ComputerGraphics/Lectures/Line Algorithms.md",
+    "ComputerGraphics/Lectures/Untitled",
     "ComputerGraphics/Lectures/Introduction To Computer Graphics.md",
     "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
+    "ComputerGraphics/Concepts/Frame Buffer.md",
+    "ComputerGraphics/Concepts/Display Model.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
     "OperatingSystems/Concepts/Scheduling Algorithm.md",
     "OperatingSystems/Concepts/Process Scheduler.md",
     "OperatingSystems/Concepts/CPU State.md",
@@ -205,11 +207,6 @@
     "OperatingSystems/ToWorkOn/Interrupt.md",
     "I/O Blocking.md",
     "I",
-    "OperatingSystems/ToWorkOn/System Call.md",
-    "OperatingSystems/ToWorkOn/Time Sharing.md",
-    "OperatingSystems/ToWorkOn/Process Terminated State.md",
-    "OperatingSystems/ToWorkOn/Process New State.md",
-    "OperatingSystems/ToWorkOn/Process Blocked State.md",
     "OperatingSystems/ToWorkOn",
     "OperatingSystems/Zybooks",
     "OperatingSystems/Concepts",
