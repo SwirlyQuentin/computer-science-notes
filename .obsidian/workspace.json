@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "025901df95917231",
+        "id": "190fa165af25a928",
         "type": "tabs",
         "children": [
           {
-            "id": "136e7fd827bfbe5b",
+            "id": "46c620ffd7b65ce7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Lectures/2D Transformations.md",
-                "mode": "source",
+                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2D Transformations"
+              "title": "4. Fill Algorithms"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 4. Fill Algorithms"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 4. Fill Algorithms"
             }
           },
           {
@@ -141,7 +143,7 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
@@ -154,21 +156,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
+                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Basic OpenGL Demo"
+              "title": "Outline of 4. Fill Algorithms"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,35 +182,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "136e7fd827bfbe5b",
+  "active": "46c620ffd7b65ce7",
   "lastOpenFiles": [
-    "ComputerGraphics/Lectures/Fill Algorithms.md",
-    "ComputerGraphics/Lectures/2D Transformations.md",
-    "Untitled.md",
-    "ComputerGraphics/Lectures/Line Algorithms.md",
-    "ComputerGraphics/Lectures/Untitled",
-    "ComputerGraphics/Lectures/Introduction To Computer Graphics.md",
-    "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
-    "ComputerGraphics/Concepts/Frame Buffer.md",
-    "ComputerGraphics/Concepts/Display Model.md",
-    "ComputerGraphics/Concepts/Immediate Mode.md",
-    "OperatingSystems/Concepts/Scheduling Algorithm.md",
-    "OperatingSystems/Concepts/Process Scheduler.md",
-    "OperatingSystems/Concepts/CPU State.md",
-    "OperatingSystems/Concepts/CPU Register.md",
-    "OperatingSystems/ToWorkOn/Stack.md",
-    "OperatingSystems/ToWorkOn/Process Suspended State.md",
-    "OperatingSystems/Concepts/Context Switch.md",
-    "OperatingSystems/Concepts/PCB.md",
-    "OperatingSystems/Concepts/Process.md",
-    "OperatingSystems/ToWorkOn/Threads.md",
-    "OperatingSystems/ToWorkOn/Execution Stack.md",
-    "ToWorkOn/Stack (Execution Stack).md",
-    "ComputerGraphics/Concepts/Double Buffer.md",
-    "OperatingSystems/Zybooks/2.1 The Process Concept.md",
-    "ToWorkOn/Process vs Program.md",
-    "OperatingSystems/ToWorkOn/IO Blocking.md",
+    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
+    "ComputerGraphics/Lectures/2. Line Algorithms.md",
+    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
+    "ComputerGraphics/Concepts/Parametric Curve.md",
+    "ComputerGraphics/Images/ButterflyParametricCurve.svg",
+    "ComputerGraphics/Concepts/Hermite Curve.md",
+    "ComputerGraphics/Concepts/Bezier Curve.md",
+    "ComputerGraphics/Concepts/Control Points.md",
+    "ComputerGraphics/Concepts/Linear Interpolation.md",
+    "README.md",
+    "ComputerGraphics/Concepts/Interpolation.md",
     "OperatingSystems/ToWorkOn/Interrupt.md",
+    "ComputerGraphics/Concepts/Spline.md",
+    "ComputerGraphics/Concepts/DirectX.md",
+    "ComputerGraphics/Concepts/Convex Polygon.md",
+    "ComputerGraphics/Concepts/Discrete Image.md",
+    "ComputerGraphics/Concepts/Edge Table.md",
+    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+    "ComputerGraphics/Concepts/Vertex Table.md",
+    "ComputerGraphics/Concepts/Polygon.md",
+    "ComputerGraphics/Lectures/5. 2D Transformations.md",
+    "ComputerGraphics/Images/HermiteCurveExample.png",
+    "ComputerGraphics/Images",
+    "ComputerGraphics/Lectures/9. 3D Viewing.md",
+    "ComputerGraphics/Lectures/8. Clipping.md",
+    "ComputerGraphics/Lectures/7. 2D Viewing.md",
+    "ComputerGraphics/Lectures/6. 3D Transformations.md",
+    "OperatingSystems/Zybooks/2.1 The Process Concept.md",
+    "ComputerGraphics/Lectures/Untitled",
     "I",
     "OperatingSystems/ToWorkOn",
     "OperatingSystems/Zybooks",
@@ -217,7 +220,6 @@
     "OperatingSystems",
     "ComputerGraphics/CodeExamples",
     "ComputerGraphics/Lectures",
-    "ComputerGraphics/Concepts",
-    "ComputerGraphics"
+    "ComputerGraphics/Concepts"
   ]
 }
