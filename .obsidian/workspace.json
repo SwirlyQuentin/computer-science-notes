@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
+                "file": "ComputerGraphics/Lectures/10. 3D Object Representation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Command"
+              "title": "10. 3D Object Representation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
+                "file": "ComputerGraphics/Concepts/Spline.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2. Command"
+              "title": "Backlinks for Spline"
             }
           },
           {
@@ -156,17 +156,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
+                "file": "ComputerGraphics/Concepts/Spline.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2. Command"
+              "title": "Outline of Spline"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,40 +185,40 @@
   },
   "active": "b582de10d07af86f",
   "lastOpenFiles": [
-    "GameProgrammingPatterns/Chapters/1. Architecture, Performance, and Games.md",
-    "GameProgrammingPatterns/Chapters/2. Command.md",
-    "OperatingSystems/ToWorkOn/Stack.md",
-    "LeetCode/Problems/5. Longest Palindromic Substring.md",
+    "ComputerGraphics/Concepts/SVG.md",
+    "ComputerGraphics/Lectures/10. 3D Object Representation.md",
+    "ComputerGraphics/Concepts/Raster Graphics.md",
+    "ComputerGraphics/Concepts/Vertex Table.md",
+    "ComputerGraphics/Concepts/WPF.md",
+    "ComputerGraphics/Concepts/Polygon.md",
+    "ComputerGraphics/Concepts/Parametric Curve.md",
+    "ComputerGraphics/Concepts/Back-Face Culling.md",
+    "ComputerGraphics/Concepts/Mesh Simplification.md",
+    "ComputerGraphics/Lectures/9. 3D Viewing.md",
+    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
+    "ComputerGraphics/Lectures/2. Line Algorithms.md",
+    "ComputerGraphics/Lectures/6. 3D Transformations.md",
+    "ComputerGraphics/Lectures/5. 2D Transformations.md",
+    "ComputerGraphics/Concepts/Spline.md",
+    "ComputerGraphics/Concepts/Parametric Surface.md",
+    "ComputerGraphics/Concepts/Vertex Ordering.md",
+    "ComputerGraphics/Concepts/Vertex (3D Graphics).md",
+    "ComputerGraphics/Concepts/Double Buffer.md",
+    "ComputerGraphics/Concepts/Triangular Mesh.md",
+    "ComputerGraphics/Concepts/Triangle (3D Graphics).md",
+    "ComputerGraphics/Concepts/Surface Patch.md",
+    "ComputerGraphics/Concepts/Surface Normal (3D Graphics).md",
+    "ComputerGraphics/Concepts/Subdivision.md",
+    "ComputerGraphics/Concepts/Geometric Transformation.md",
+    "ComputerGraphics/Concepts/Face (3D. Graphics).md",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",
     "GameProgrammingPatterns",
-    "LeetCode/Untitled.md",
     "LeetCode/Problems",
     "LeetCode",
-    "README.md",
-    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
-    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
-    "ComputerGraphics/Lectures/2. Line Algorithms.md",
-    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
-    "ComputerGraphics/Concepts/Parametric Curve.md",
     "ComputerGraphics/Images/ButterflyParametricCurve.svg",
-    "ComputerGraphics/Concepts/Hermite Curve.md",
-    "ComputerGraphics/Concepts/Bezier Curve.md",
-    "ComputerGraphics/Concepts/Control Points.md",
-    "ComputerGraphics/Concepts/Linear Interpolation.md",
-    "ComputerGraphics/Concepts/Interpolation.md",
-    "OperatingSystems/ToWorkOn/Interrupt.md",
-    "ComputerGraphics/Concepts/Spline.md",
-    "ComputerGraphics/Concepts/DirectX.md",
-    "ComputerGraphics/Concepts/Convex Polygon.md",
-    "ComputerGraphics/Concepts/Discrete Image.md",
-    "ComputerGraphics/Concepts/Edge Table.md",
-    "ComputerGraphics/Concepts/Vertex Table.md",
-    "ComputerGraphics/Concepts/Polygon.md",
-    "ComputerGraphics/Lectures/5. 2D Transformations.md",
     "ComputerGraphics/Images/HermiteCurveExample.png",
     "ComputerGraphics/Images",
-    "ComputerGraphics/Lectures/9. 3D Viewing.md",
     "ComputerGraphics/Lectures/Untitled",
     "I",
     "OperatingSystems/ToWorkOn",
