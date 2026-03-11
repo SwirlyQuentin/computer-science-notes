@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "190fa165af25a928",
+        "id": "6124db626d34da8c",
         "type": "tabs",
         "children": [
           {
-            "id": "46c620ffd7b65ce7",
+            "id": "b582de10d07af86f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
-                "mode": "preview",
+                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Fill Algorithms"
+              "title": "2. Command"
             }
           }
         ]
@@ -94,9 +94,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4. Fill Algorithms"
+              "title": "Backlinks for 2. Command"
             }
           },
           {
@@ -156,20 +156,22 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+                "file": "GameProgrammingPatterns/Chapters/2. Command.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 4. Fill Algorithms"
+              "title": "Outline of 2. Command"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,8 +184,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "46c620ffd7b65ce7",
+  "active": "b582de10d07af86f",
   "lastOpenFiles": [
+    "GameProgrammingPatterns/Chapters/1. Architecture, Performance, and Games.md",
+    "GameProgrammingPatterns/Chapters/2. Command.md",
+    "OperatingSystems/ToWorkOn/Stack.md",
+    "LeetCode/Problems/5. Longest Palindromic Substring.md",
+    "GameProgrammingPatterns/Concepts",
+    "GameProgrammingPatterns/Chapters",
+    "GameProgrammingPatterns",
+    "LeetCode/Untitled.md",
+    "LeetCode/Problems",
+    "LeetCode",
+    "README.md",
+    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
     "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
     "ComputerGraphics/Lectures/2. Line Algorithms.md",
     "ComputerGraphics/Lectures/3. Circles and Elipses.md",
@@ -193,7 +207,6 @@
     "ComputerGraphics/Concepts/Bezier Curve.md",
     "ComputerGraphics/Concepts/Control Points.md",
     "ComputerGraphics/Concepts/Linear Interpolation.md",
-    "README.md",
     "ComputerGraphics/Concepts/Interpolation.md",
     "OperatingSystems/ToWorkOn/Interrupt.md",
     "ComputerGraphics/Concepts/Spline.md",
@@ -201,25 +214,15 @@
     "ComputerGraphics/Concepts/Convex Polygon.md",
     "ComputerGraphics/Concepts/Discrete Image.md",
     "ComputerGraphics/Concepts/Edge Table.md",
-    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
     "ComputerGraphics/Concepts/Vertex Table.md",
     "ComputerGraphics/Concepts/Polygon.md",
     "ComputerGraphics/Lectures/5. 2D Transformations.md",
     "ComputerGraphics/Images/HermiteCurveExample.png",
     "ComputerGraphics/Images",
     "ComputerGraphics/Lectures/9. 3D Viewing.md",
-    "ComputerGraphics/Lectures/8. Clipping.md",
-    "ComputerGraphics/Lectures/7. 2D Viewing.md",
-    "ComputerGraphics/Lectures/6. 3D Transformations.md",
-    "OperatingSystems/Zybooks/2.1 The Process Concept.md",
     "ComputerGraphics/Lectures/Untitled",
     "I",
     "OperatingSystems/ToWorkOn",
-    "OperatingSystems/Zybooks",
-    "OperatingSystems/Concepts",
-    "OperatingSystems",
-    "ComputerGraphics/CodeExamples",
-    "ComputerGraphics/Lectures",
-    "ComputerGraphics/Concepts"
+    "OperatingSystems/Zybooks"
   ]
 }
