@@ -1,56 +1,129 @@
-## Quick Summary
-A vertex table is a structured list of per-vertex data (position plus attributes). It is the main geometry input used by rendering pipelines before primitives are assembled.
+## **Quick Summary**
+A Vertex Table is a structured list that stores the attributes of every vertex used to define geometric objects. Each row represents one vertex and contains data such as position, color, normals, or texture coordinates.
 
-## What It Is
-A vertex table stores one vertex per row. Each row may contain:
-- Position `(x, y, z)`
-- Normal `(nx, ny, nz)`
-- Texture coordinates `(u, v)`
-- Color `(r, g, b, a)`
-- Tangent/bitangent
-- Skinning data (weights and bone indices)
+## **Core Idea**
+- Each row represents **one vertex**
+- Stores **per-vertex attributes**
+- Used as the main **geometry input for rendering pipelines**
+- Works together with index/edge references to build shapes
 
-Think of it as an attribute database for vertices.
+The vertex table defines **what each vertex is**, while other structures define **how vertices connect**.
 
-## How It Is Used
-- Vertex processing: shaders read each vertex row.
-- Primitive assembly: indices reference rows to build triangles/lines.
-- [[Interpolation]] source: rasterization interpolates per-vertex attributes across fragments.
-- Animation: skinned meshes update transformed vertex positions from this data.
+## **What it is**
+A Vertex Table is a data structure used in computer graphics to store the geometric and attribute information associated with vertices.
 
-## Vertex Table + Index Buffer
-- Vertex table: unique vertex attributes.
-- Index buffer: integer references that define topology.
+Each entry in the table corresponds to a vertex and may include multiple properties such as:
 
-This avoids duplicating shared corners.
+- position $(x, y, z)$
+- surface normal $(n_x, n_y, n_z)$
+- texture coordinates $(u, v)$
+- color $(r, g, b, a)$
+- tangent and bitangent vectors
+- animation data (bone weights and indices)
 
-## Mini Example
-Vertex rows:
-- `v0 = pos(0,0,0), uv(0,0)`
-- `v1 = pos(1,0,0), uv(1,0)`
-- `v2 = pos(1,1,0), uv(1,1)`
-- `v3 = pos(0,1,0), uv(0,1)`
+Conceptually, the table acts as a **database of vertex attributes** used to construct geometric primitives like triangles or lines.
+
+In simple polygon representations (as discussed in the lecture), the vertex table stores coordinates and an [[Edge Table]] references vertex indices to define edges.
+
+## **How its Used**
+Vertex tables are a fundamental structure used in graphics pipelines and geometry processing.
+
+Typical uses include:
+
+- defining geometry in 2D and 3D scenes
+- supplying vertex data to the GPU
+- constructing primitives such as triangles or polygons
+- enabling interpolation of attributes during [[Rasterization]]
+- supporting animation and deformation of meshes
+
+In rendering pipelines:
+
+1. Vertex attributes are stored in the vertex table.
+2. Indices or edge lists reference vertices.
+3. The GPU processes vertices through vertex shaders.
+4. Attributes are interpolated across fragments during rendering.
+
+Using vertex tables avoids storing duplicate vertex information and allows efficient geometry reuse.
+
+## **Example**
+
+### Example 1: Simple Vertex Table
+
+| Index | x | y |
+|-------|---|---|
+| 0 | 1 | 2 |
+| 1 | 3 | 5 |
+| 2 | 4 | 2 |
+
+This table defines three vertices.
+
+An [[Edge Table]] could then reference these indices to define edges.
+
+### Example 2: Vertex Table with Attributes
+
+| Index | Position | UV |
+|-------|----------|----|
+| 0 | (0,0,0) | (0,0) |
+| 1 | (1,0,0) | (1,0) |
+| 2 | (1,1,0) | (1,1) |
+| 3 | (0,1,0) | (0,1) |
+
+This defines a square using four vertices.
+
+### Example 3: Indexed Geometry
 
 Indices:
-- `(0,1,2)`
-- `(0,2,3)`
 
-Result: one quad rendered using two triangles.
+$$(0,1,2), (0,2,3)$$
 
-## Practical Design Choices
-- Interleaved layout vs separate attribute arrays.
-- Precision choice: float32/float16/packed formats.
-- Data alignment for GPU-friendly access.
+These indices build two triangles from the vertex table to form a quad.
+```
+Vertex Table → Indices → Triangles → Rasterization
+```
 
-## Common Pitfalls
-- Attribute layout mismatch with shader inputs.
-- Inconsistent winding causes culling or normal issues.
-- Duplicate near-identical vertices waste memory.
+## **Details**
 
-## Exam-Style Questions
-1. Why does indexed rendering reduce memory cost?
-2. What is the difference between geometry data and topology data?
-3. How can a bad vertex layout break shading?
+### Vertex Attributes
+A vertex can store multiple types of attributes used during rendering:
 
-## One-Line Recall
-A vertex table stores what each vertex is; indices decide how vertices connect into renderable primitives.
+- geometric position
+- surface normals for lighting
+- texture coordinates
+- color information
+- animation weights
+
+These attributes allow shaders to compute lighting, shading, and textures.
+
+### Relationship with Edge Tables
+In many geometry representations:
+
+- [[Vertex Table]] stores coordinates
+- [[Edge Table]] references vertex indices to define edges
+
+This avoids storing duplicate vertices.
+
+### GPU Memory Layout
+In modern graphics APIs, vertex tables are often stored in **vertex buffers**.
+
+Design considerations include:
+
+- interleaved vs separate attribute arrays
+- memory alignment for GPU efficiency
+- precision formats (float32, float16, packed values)
+
+### Common Pitfalls
+Problems that may occur include:
+
+- incorrect attribute layout for shaders
+- duplicated vertices increasing memory usage
+- inconsistent vertex ordering affecting polygon orientation
+
+## **Related**
+[[Edge Table]]
+[[Polygon]]
+[[Interpolation]]
+[[Rasterization]]
+[[Bezier Curve]]
+
+## **One Line Recall**
+A vertex table stores the attributes of each vertex, while indices or edges determine how those vertices connect into geometric primitives.

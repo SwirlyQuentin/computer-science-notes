@@ -1,41 +1,117 @@
-## Quick Summary
-An edge table is a scanline-fill data structure that stores [[polygon]] edges by their starting y-coordinate, enabling efficient row-by-row filling in raster space.
+## **Quick Summary**
+An Edge Table is a data structure used in scanline polygon filling that stores polygon edges organized by their starting scanline. It allows raster algorithms to efficiently determine which edges intersect each row of pixels.
 
-## What It Is
-An edge table contains one record per non-horizontal polygon edge, usually with:
-- `y_min`
-- `y_max`
-- `x_at_y_min`
-- `inverse_slope = dx/dy`
+## **Core Idea**
+- Stores information about **polygon edges**
+- Organized by **starting y-coordinate**
+- Used for **scanline rasterization**
+- Works together with an **Active Edge List (AEL)**
 
-Edges are bucketed by `y_min` for fast scanline activation.
+Instead of recomputing intersections for every scanline, the edge table allows incremental updates as the algorithm moves down the image.
 
-## How It Is Used
-In scanline polygon filling:
-1. Build edge table from polygon edges.
-2. For each scanline y, move matching edges into an active edge list.
-3. Sort active edges by current x.
-4. Fill spans between edge pairs.
-5. Increment edge x using inverse slope for next scanline.
+## **What it is**
+An Edge Table is a preprocessing data structure that stores all non-horizontal edges of a [[Polygon]] along with information needed to compute their intersection with scanlines.
 
-## Why It Is Useful
-- Incremental updates are fast.
-- Avoids recomputing intersections each row.
-- Works well for software rasterization teaching and implementations.
+Each edge entry typically contains:
 
-## Relationship To Active Edge List
-- Edge table: static preprocessed buckets.
-- Active edge list: dynamic edges crossing current scanline.
+- $y_{min}$ → the scanline where the edge begins
+- $y_{max}$ → the scanline where the edge ends
+- $x_{min}$ → x-coordinate where the edge intersects $y_{min}$
+- inverse slope $\frac{dx}{dy}$
 
-## Practical Rules
-- Skip horizontal edges to avoid double counting.
-- Use consistent top/bottom inclusion rules.
-- Be careful with shared vertices and parity logic.
+Edges are grouped into **buckets based on their starting scanline $y_{min}$**.
+This allows the rasterization algorithm to quickly activate edges when the scanline reaches their starting point.
 
-## Exam-Style Questions
-1. Why are horizontal edges typically excluded in scanline fill?
-2. What data is needed in each edge record?
-3. How does the active edge list differ from the edge table?
+## **How its Used**
+Edge tables are primarily used in **scanline polygon filling algorithms** in raster graphics.
 
-## One-Line Recall
-An edge table is a y-bucketed edge structure that makes scanline polygon filling efficient and predictable.
+Typical workflow:
+
+1. Construct the [[Edge Table]] from the polygon's edges.
+2. Move scanline $y$ from top to bottom of the polygon.
+3. Add edges with $y_{min} = y$ to the **Active Edge List (AEL)**.
+4. Sort active edges by their current x-intersection.
+5. Fill pixel spans between pairs of edges.
+6. Update intersection positions using the edge's inverse slope.
+
+This incremental process makes rasterization more efficient than recomputing intersections for each scanline.
+
+## **Example**
+
+### Example 1: Edge Record
+
+For an edge between vertices:
+
+$$V_1 = (2,2), \quad V_2 = (6,6)$$
+
+Compute:
+
+$$y_{min} = 2$$
+
+$$y_{max} = 6$$
+
+$$x_{min} = 2$$
+
+$$\frac{dx}{dy} = \frac{6-2}{6-2} = 1$$
+
+Edge record:
+
+| y_min | y_max | x_at_y_min | dx/dy |
+|-------|-------|------------|-------|
+| 2 | 6 | 2 | 1 |
+
+### Example 2: Edge Table Buckets
+```
+y = 2 : edge A
+y = 4 : edge B
+y = 6 : edge C
+```
+
+Each scanline activates edges stored in its bucket.
+
+### Example 3: Scanline Filling
+```
+Edge A     Edge B
+  \         /
+   \       /
+    \_____/  ← filled region
+```
+
+The algorithm fills pixels between edge intersections on each scanline.
+
+## **Details**
+
+### Horizontal Edges
+Horizontal edges are usually **excluded** because they can cause double counting when determining interior spans.
+
+### Active Edge List (AEL)
+During rasterization:
+
+- **Edge Table** → static structure storing edges
+- **Active Edge List** → dynamic list of edges intersecting the current scanline
+
+The AEL is updated each scanline.
+
+### Incremental Intersection Updates
+Instead of recomputing intersections:
+
+$$x_{new} = x_{old} + \frac{dx}{dy}$$
+
+This allows efficient incremental calculations.
+
+### Parity Rule
+Many scanline algorithms use an **even–odd rule**:
+
+- fill pixels between every pair of edge intersections.
+
+This determines the interior of the polygon.
+
+## **Related**
+[[Polygon]]
+[[Vertex Table]]
+[[Rasterization]]
+Scanline Algorithm
+Active Edge List
+
+## **One Line Recall**
+An edge table organizes polygon edges by starting scanline so scanline rasterization can efficiently determine which pixels to fill.

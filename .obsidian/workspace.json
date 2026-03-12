@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
+                "file": "ComputerGraphics/Lectures/3. Circles and Elipses.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Immediate Mode"
+              "title": "3. Circles and Elipses"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
+                "file": "ComputerGraphics/Lectures/3. Circles and Elipses.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Immediate Mode"
+              "title": "Backlinks for 3. Circles and Elipses"
             }
           },
           {
@@ -185,32 +185,32 @@
   },
   "active": "b582de10d07af86f",
   "lastOpenFiles": [
-    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
-    "Concept Template.md",
-    "ComputerGraphics/Concepts/Immediate Mode.md",
-    "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
-    "ComputerGraphics/Concepts/Control Points.md",
-    "ComputerGraphics/Concepts/Continuous Images.md",
-    "ComputerGraphics/Concepts/Clip Space.md",
-    "ComputerGraphics/Concepts/Bezier Curve.md",
-    "ComputerGraphics/Concepts/Back-Face Culling.md",
-    "ComputerGraphics/Concepts/Application Model.md",
-    "ComputerGraphics/Concepts/Application Database.md",
-    "ComputerGraphics/Concepts/Hermite Curve.md",
-    "ComputerGraphics/Concepts/Linear Interpolation.md",
-    "ComputerGraphics/Concepts/Postprocessing.md",
-    "ComputerGraphics/Concepts/Projection Matrix.md",
-    "ComputerGraphics/Concepts/Vector Graphics.md",
-    "ComputerGraphics/Concepts/Convex Polygon.md",
-    "ComputerGraphics/Concepts/Display Model.md",
-    "ComputerGraphics/Lectures/10. 3D Object Representation.md",
-    "ComputerGraphics/Concepts/SVG.md",
-    "ComputerGraphics/Concepts/Raster Graphics.md",
+    "ComputerGraphics/Concepts/Edge Table.md",
+    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
     "ComputerGraphics/Concepts/Vertex Table.md",
-    "ComputerGraphics/Concepts/WPF.md",
+    "ComputerGraphics/Concepts/Convex Polygon.md",
     "ComputerGraphics/Concepts/Polygon.md",
-    "ComputerGraphics/Concepts/Parametric Curve.md",
-    "ComputerGraphics/Concepts/Mesh Simplification.md",
+    "ComputerGraphics/Lectures/5. 2D Transformations.md",
+    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+    "ComputerGraphics/Lectures/2. Line Algorithms.md",
+    "ComputerGraphics/Concepts/Postprocessing.md",
+    "ComputerGraphics/Concepts/Preprocessing.md",
+    "ComputerGraphics/Concepts/Continuous Images.md",
+    "ComputerGraphics/Concepts/Discrete Image.md",
+    "ComputerGraphics/Concepts/Frame Buffer.md",
+    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
+    "ComputerGraphics/Concepts/Vector Graphics.md",
+    "ComputerGraphics/Concepts/Raster Graphics.md",
+    "ComputerGraphics/Concepts/Display Model.md",
+    "ComputerGraphics/Concepts/Retained Mode.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/Concepts/Application Model.md",
+    "Concept Template.md",
+    "ComputerGraphics/Concepts/DirectX.md",
+    "ComputerGraphics/Concepts/Control Points.md",
+    "ComputerGraphics/Concepts/Clip Space.md",
+    "ComputerGraphics/Concepts/Application Database.md",
+    "ComputerGraphics/Lectures/10. 3D Object Representation.md",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",
     "GameProgrammingPatterns",
