@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Lectures/10. 3D Object Representation.md",
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10. 3D Object Representation"
+              "title": "Immediate Mode"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/Concepts/Spline.md",
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Spline"
+              "title": "Backlinks for Immediate Mode"
             }
           },
           {
@@ -185,32 +185,32 @@
   },
   "active": "b582de10d07af86f",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/SVG.md",
+    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
+    "Concept Template.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/CodeExamples/Basic OpenGL Demo.md",
+    "ComputerGraphics/Concepts/Control Points.md",
+    "ComputerGraphics/Concepts/Continuous Images.md",
+    "ComputerGraphics/Concepts/Clip Space.md",
+    "ComputerGraphics/Concepts/Bezier Curve.md",
+    "ComputerGraphics/Concepts/Back-Face Culling.md",
+    "ComputerGraphics/Concepts/Application Model.md",
+    "ComputerGraphics/Concepts/Application Database.md",
+    "ComputerGraphics/Concepts/Hermite Curve.md",
+    "ComputerGraphics/Concepts/Linear Interpolation.md",
+    "ComputerGraphics/Concepts/Postprocessing.md",
+    "ComputerGraphics/Concepts/Projection Matrix.md",
+    "ComputerGraphics/Concepts/Vector Graphics.md",
+    "ComputerGraphics/Concepts/Convex Polygon.md",
+    "ComputerGraphics/Concepts/Display Model.md",
     "ComputerGraphics/Lectures/10. 3D Object Representation.md",
+    "ComputerGraphics/Concepts/SVG.md",
     "ComputerGraphics/Concepts/Raster Graphics.md",
     "ComputerGraphics/Concepts/Vertex Table.md",
     "ComputerGraphics/Concepts/WPF.md",
     "ComputerGraphics/Concepts/Polygon.md",
     "ComputerGraphics/Concepts/Parametric Curve.md",
-    "ComputerGraphics/Concepts/Back-Face Culling.md",
     "ComputerGraphics/Concepts/Mesh Simplification.md",
-    "ComputerGraphics/Lectures/9. 3D Viewing.md",
-    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
-    "ComputerGraphics/Lectures/2. Line Algorithms.md",
-    "ComputerGraphics/Lectures/6. 3D Transformations.md",
-    "ComputerGraphics/Lectures/5. 2D Transformations.md",
-    "ComputerGraphics/Concepts/Spline.md",
-    "ComputerGraphics/Concepts/Parametric Surface.md",
-    "ComputerGraphics/Concepts/Vertex Ordering.md",
-    "ComputerGraphics/Concepts/Vertex (3D Graphics).md",
-    "ComputerGraphics/Concepts/Double Buffer.md",
-    "ComputerGraphics/Concepts/Triangular Mesh.md",
-    "ComputerGraphics/Concepts/Triangle (3D Graphics).md",
-    "ComputerGraphics/Concepts/Surface Patch.md",
-    "ComputerGraphics/Concepts/Surface Normal (3D Graphics).md",
-    "ComputerGraphics/Concepts/Subdivision.md",
-    "ComputerGraphics/Concepts/Geometric Transformation.md",
-    "ComputerGraphics/Concepts/Face (3D. Graphics).md",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",
     "GameProgrammingPatterns",
