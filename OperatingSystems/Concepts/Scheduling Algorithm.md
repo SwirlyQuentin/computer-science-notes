@@ -1,6 +1,6 @@
 
 **Definition:**
-A **scheduling algorithm** is the policy used by the operating system to decide which process in the ready queue should run next on the CPU.
+A **scheduling algorithm** is the policy used by the operating system to decide which [[process]] in the ready queue should run next on the CPU.
 
 ---
 
@@ -89,7 +89,7 @@ No single algorithm optimizes all goals perfectly.
 
 ---
 
-### Relationship to the Scheduler
+### Relationship to the [[Process Scheduler|Scheduler]]
 
 The scheduling algorithm is the **decision rule**.
 

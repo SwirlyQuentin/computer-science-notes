@@ -1,38 +1,125 @@
-## Quick Summary
-Control points are shape handles that define or influence curves and surfaces. They are central to interactive modeling and path editing.
+## **Quick Summary**
 
-## What It Is
-A control point is a reference point used by a curve/surface formulation to determine geometry.
+Control points are reference points that define or influence the shape of curves and surfaces in geometric modeling.
 
-Important distinction:
-- [[Interpolation]] point: curve must pass through it.
-- Control point: curve is influenced by it, but may not pass through it.
+---
 
-## How It Is Used
-- Editing vector paths in drawing software.
-- Tuning curvature for animation paths.
-- Defining [[spline]] and surface patches in CAD/modeling.
-- Managing local shape behavior in B-splines/NURBS.
+## **Core Idea**
 
-## Behavior By Curve Family
-- [[Bezier Curve|Bezier]]: endpoints are included, internal points steer tangents/shape.
-- [[Hermite Curve|Hermite]]: endpoint positions plus tangent controls.
-- B-spline: control points affect local regions, not entire curve.
+* Curves and surfaces are defined mathematically using points that influence their shape.
+* Moving control points changes the geometry without directly editing the curve itself.
+* Control points provide an indirect and structured way to manipulate complex shapes.
+* Different curve formulations determine how strongly and how locally control points influence the geometry.
 
-## Why Control Points Matter
-- Intuitive drag-and-edit workflow.
-- Compact representation of complex smooth forms.
-- Good balance between artist control and mathematical structure.
+---
 
-## Practical Notes
-- Point spacing affects curvature smoothness.
-- Extreme placement can create loops/self-intersections.
-- Constraint tools can enforce symmetry or continuity.
+## **What it is**
 
-## Exam-Style Questions
-1. How do control points differ from [[interpolation]] points?
-2. Why is local control valuable in curve editing?
-3. How do inner [[Bezier Curve|Bezier]] control points affect the curve?
+A control point is a reference point used by a mathematical curve or surface representation to determine its shape.
 
-## One-Line Recall
-Control points are the primary handles used to shape curves and surfaces in practical graphics workflows.
+Instead of storing every point on a curve, many modeling systems represent curves using a small set of control points. Mathematical functions then generate the actual curve based on these points.
+
+An important distinction exists between two types of points used in curve modeling:
+
+* [[Interpolation]] point – the curve must pass through this point.
+* Control point – the curve is influenced by the point but does not necessarily pass through it.
+
+Control points therefore act as shape guides that determine how the curve bends, stretches, or changes direction.
+
+---
+
+## **How its Used**
+
+### Vector Graphics Editing
+
+Control points act as handles that designers can drag to reshape vector paths in drawing software.
+
+### Animation Paths
+
+Motion paths for objects or cameras can be defined by curves whose shapes are controlled by control points.
+
+### Geometric Modeling
+
+Curves and surfaces used in modeling systems—such as splines and patches—are defined using sets of control points.
+
+### CAD and Surface Design
+
+Control points are used to construct smooth surfaces and curves in engineering and industrial design systems.
+
+---
+
+## **Example**
+
+### Example 1: Quadratic Curve Control
+
+A quadratic curve defined by three control points:
+```
+P0, P1, P2
+```
+
+* `P0` and `P2` determine the start and end points
+* `P1` influences the direction and curvature
+
+Moving `P1` changes the curve's bend without moving the endpoints.
+
+### Example 2: Local vs Global Influence
+
+Consider a curve with several control points:
+```
+P0  P1  P2  P3  P4
+```
+
+* In some curve types (like [[Bezier Curve]]), moving a point may influence the entire curve.
+* In others (like B-splines), moving a control point only affects a local region of the curve.
+
+---
+
+## **Details**
+
+### Behavior by Curve Family
+
+**[[Bezier Curve|Bezier]]**
+
+* Curve starts at the first control point and ends at the last.
+* Interior control points influence the tangent direction and curvature.
+
+**[[Hermite Curve|Hermite]]**
+
+* Uses endpoint positions and tangent vectors to determine curve shape.
+
+**B-spline Curves**
+
+* Provide local control, meaning changes to one control point only affect nearby portions of the curve.
+
+### Shape Control
+
+The placement and spacing of control points strongly affects curve behavior:
+
+* Closely spaced points can create sharp curvature
+* Even spacing produces smoother shapes
+
+### Potential Issues
+
+Extreme placement of control points may cause:
+
+* loops
+* self-intersections
+* unstable curvature
+
+Many modeling systems provide constraints or alignment tools to maintain smoothness or symmetry.
+
+---
+
+## **Related**
+
+* [[Bezier Curve]]
+* [[Interpolation]]
+* [[Spline]]
+* [[Hermite Curve]]
+* [[Parametric Curve]]
+
+---
+
+## **One Line Recall**
+
+Control points are reference points that influence the shape of curves and surfaces without necessarily lying on them.

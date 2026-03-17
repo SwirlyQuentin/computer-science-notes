@@ -57,7 +57,7 @@ These flags affect control flow and arithmetic behavior.
 When a [[Context Switch]] occurs:
 
 1. The OS saves the CPU State into the process’s [[PCB]].
-2. Another process’s CPU State is loaded from its PCB.
+2. Another process’s CPU State is loaded from its [[PCB]].
 3. The CPU resumes execution using that restored state.
 
 The CPU State lives:

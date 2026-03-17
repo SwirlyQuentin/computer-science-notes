@@ -1,7 +1,7 @@
 ## (Process Control Block)
 
 **Definition:**
-A **Process Control Block (PCB)** is a data structure used by the operating system to store all information needed to manage and track a process.
+A **[[Process]] Control Block (PCB)** is a data structure used by the [[Operating System]] to store all information needed to manage and track a [[process]].
 
 ---
 

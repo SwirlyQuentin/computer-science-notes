@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Lectures/3. Circles and Elipses.md",
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "3. Circles and Elipses"
+              "title": "Immediate Mode"
             }
           }
         ]
@@ -40,7 +41,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -94,17 +95,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/Lectures/3. Circles and Elipses.md",
-                "collapseAll": false,
-                "extraContext": true,
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
+                "collapseAll": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 3. Circles and Elipses"
+              "title": "Backlinks for Immediate Mode"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerGraphics/Lectures/4. Fill Algorithms.md",
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 4. Fill Algorithms"
+              "title": "Outgoing links from Immediate Mode"
             }
           },
           {
@@ -156,16 +157,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerGraphics/Concepts/Spline.md",
+                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Spline"
+              "title": "Outline of Immediate Mode"
+            }
+          },
+          {
+            "id": "df3ee3a3b9f1bbf9",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -180,37 +192,42 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
   "active": "b582de10d07af86f",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/Edge Table.md",
-    "ComputerGraphics/Lectures/3. Circles and Elipses.md",
-    "ComputerGraphics/Concepts/Vertex Table.md",
-    "ComputerGraphics/Concepts/Convex Polygon.md",
-    "ComputerGraphics/Concepts/Polygon.md",
-    "ComputerGraphics/Lectures/5. 2D Transformations.md",
-    "ComputerGraphics/Lectures/4. Fill Algorithms.md",
-    "ComputerGraphics/Lectures/2. Line Algorithms.md",
-    "ComputerGraphics/Concepts/Postprocessing.md",
-    "ComputerGraphics/Concepts/Preprocessing.md",
-    "ComputerGraphics/Concepts/Continuous Images.md",
-    "ComputerGraphics/Concepts/Discrete Image.md",
-    "ComputerGraphics/Concepts/Frame Buffer.md",
-    "ComputerGraphics/Lectures/1. Introduction To Computer Graphics.md",
-    "ComputerGraphics/Concepts/Vector Graphics.md",
-    "ComputerGraphics/Concepts/Raster Graphics.md",
-    "ComputerGraphics/Concepts/Display Model.md",
-    "ComputerGraphics/Concepts/Retained Mode.md",
-    "ComputerGraphics/Concepts/Immediate Mode.md",
-    "ComputerGraphics/Concepts/Application Model.md",
-    "Concept Template.md",
+    "ComputerGraphics/Concepts/Vertex Ordering.md",
+    "ComputerGraphics/Concepts/Vertex (3D Graphics).md",
+    "ComputerGraphics/Concepts/Triangular Mesh.md",
+    "ComputerGraphics/Concepts/Triangle (3D Graphics).md",
+    "ComputerGraphics/Concepts/Surface Patch.md",
+    "ComputerGraphics/Concepts/Surface Normal (3D Graphics).md",
+    "ComputerGraphics/Concepts/Parametric Surface.md",
+    "ComputerGraphics/Concepts/Mesh Simplification.md",
+    "ComputerGraphics/Concepts/Face (3D. Graphics).md",
+    "ComputerGraphics/Concepts/Geometric Transformation.md",
+    "ComputerGraphics/Concepts/Back-Face Culling.md",
+    "ComputerGraphics/Concepts/WPF.md",
+    "ComputerGraphics/Concepts/Spline.md",
+    "ComputerGraphics/Concepts/Scene Graph.md",
+    "ComputerGraphics/Concepts/SVG.md",
+    "ComputerGraphics/Concepts/Projection Matrix.md",
+    "ComputerGraphics/Concepts/Parametric Curve.md",
+    "ComputerGraphics/Concepts/OpenGL.md",
+    "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
+    "ComputerGraphics/Concepts/Linear Interpolation.md",
+    "ComputerGraphics/Concepts/Interpolation.md",
+    "ComputerGraphics/Concepts/Hermite Curve.md",
+    "ComputerGraphics/Concepts/Double Buffer.md",
     "ComputerGraphics/Concepts/DirectX.md",
     "ComputerGraphics/Concepts/Control Points.md",
     "ComputerGraphics/Concepts/Clip Space.md",
-    "ComputerGraphics/Concepts/Application Database.md",
-    "ComputerGraphics/Lectures/10. 3D Object Representation.md",
+    "OperatingSystems/Assignments",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",
     "GameProgrammingPatterns",
@@ -221,7 +238,6 @@
     "ComputerGraphics/Images",
     "ComputerGraphics/Lectures/Untitled",
     "I",
-    "OperatingSystems/ToWorkOn",
-    "OperatingSystems/Zybooks"
+    "OperatingSystems/ToWorkOn"
   ]
 }

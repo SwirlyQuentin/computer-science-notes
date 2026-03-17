@@ -1,6 +1,10 @@
+---
+aliases:
+  - Scheduler
+---
 
 **Definition:**
-The **Process Scheduler** is the component of the operating system responsible for selecting which ready process gets to run on the CPU next.
+The **Process Scheduler** is the component of the operating system responsible for selecting which ready [[process]] gets to run on the CPU next.
 
 ---
 

@@ -1,6 +1,6 @@
 
 **Definition:**
-A **context switch** is the process of saving the execution state of one process and restoring the execution state of another so the CPU can switch between them.
+A **context switch** is the process of saving the execution state of one [[process]] and restoring the execution state of another so the CPU can switch between them.
 
 ---
 
@@ -23,7 +23,7 @@ It allows:
 
 ### What Is Being Switched?
 
-The "context" refers to the complete [[CPU State]] of a process.
+The "context" refers to the complete [[CPU State]] of a [[process]].
 
 This includes:
 
@@ -53,8 +53,8 @@ The decision is made by the [[Process Scheduler]].
 
 1. The currently running process is interrupted.
 2. The OS saves its [[CPU State]] into its [[PCB]].
-3. The scheduler selects another process from the ready queue.
-4. The OS loads that process’s CPU State from its PCB.
+3. The [[Process Scheduler|scheduler]] selects another process from the ready queue.
+4. The OS loads that process’s CPU State from its [[PCB]].
 5. Execution resumes from its stored [[Program Counter]].
 
 From the process’s perspective, it appears as though it was never stopped.

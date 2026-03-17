@@ -1,39 +1,115 @@
-Used to prevent flickering that happens when the frame buffer is displayed before the rendering pipeline gets a chance to finish
+## **Quick Summary**
 
-Prevents flickering:
-- Back buffer -> where drawing happes
-- Front buffer -> currently displayed image
+Double buffering is a rendering technique that uses two frame buffers so a new frame can be fully rendered before being displayed, preventing flickering and partially drawn images.
 
-They swap after rendering completes
+---
 
+## **Core Idea**
 
-**Definition:**
-Double buffering is a technique that uses **two frame buffers** to prevent flickering and visual artifacts during rendering.
+* Rendering occurs in a hidden buffer while another buffer is currently displayed.
+* When rendering finishes, the buffers are swapped, instantly showing the completed frame.
+* This prevents the display from showing incomplete drawing operations.
+* The technique separates drawing operations from display output.
 
-### **The Problem**
-When drawing directly to the screen while it's being displayed the rendering pipeline could take longer than it takes to display the buffer resulting in:
-- Flickering
-- Tearing
-- Partially drawn frames
+---
 
-### **How it Works**
+## **What it is**
 
-Uses two buffers:
-1. Front Buffer -> currently displayed on screen
-2. Back Buffer -> where the next frame is being drawn
+Double buffering is a graphics technique that uses two frame buffers to ensure smooth visual updates during rendering.
 
-Process:
-1. Render the entire frame into the **back buffer**.
-2. When rendering is complete, **swap the buffers**.
-3. The back buffer becomes the front buffer (now visible).
-4. Repeat for the next frame.
+If a system draws directly to the screen buffer while it is being displayed, the display may show partially drawn frames. This happens because rendering can take longer than the screen refresh cycle.
 
-This makes the image appear instantly updated.
+Double buffering solves this by using two buffers:
 
-### **Importance**
+* **Front Buffer** – the image currently displayed on the screen.
+* **Back Buffer** – the buffer where the next frame is rendered.
 
-- Smoother animation
-- Eliminates flicker
-- Standard in modern graphics systems
-- Used in games, UI, and GPUs
-- Used in systems like [[OpenGL]] and Unity
+Once rendering finishes, the buffers swap roles, making the completed frame visible instantly.
+
+This ensures the user only sees fully rendered frames, eliminating visual artifacts caused by incomplete rendering.
+
+---
+
+## **How its Used**
+
+### Real-Time Graphics
+
+Games and interactive applications use double buffering to ensure smooth frame updates.
+
+### GPU Rendering Pipelines
+
+Modern graphics APIs render frames into back buffers managed by the GPU before presenting them.
+
+### User Interface Systems
+
+Windowing systems and UI frameworks use double buffering to prevent flicker when redrawing windows.
+
+### Graphics APIs
+
+Many rendering systems implement double buffering internally, including [[OpenGL]] and game engines.
+
+---
+
+## **Example**
+
+### Example 1: Frame Rendering Cycle
+```
+Frame 1
+Front Buffer -> Displayed on screen
+Back Buffer  -> Rendering next frame
+```
+
+After rendering finishes:
+```
+Buffer Swap
+Back Buffer  → becomes Front Buffer
+Front Buffer → becomes Back Buffer
+```
+
+Now the completed frame appears instantly.
+
+### Example 2: Without Double Buffering
+
+If drawing occurs directly to the display buffer:
+
+* A triangle might appear half drawn
+* Objects may pop in gradually
+* The screen may flicker between updates
+
+Double buffering prevents this by ensuring only finished frames are shown.
+
+---
+
+## **Details**
+
+### Buffer Swap
+
+The swap operation exchanges which buffer is displayed and which is used for rendering. This operation is often called buffer flipping or page flipping.
+
+### Relation to Screen Refresh
+
+Displays refresh at fixed intervals (for example 60 Hz). Double buffering ensures the display always reads from a stable completed frame.
+
+### Extension: Triple Buffering
+
+Some systems use triple buffering, which adds a third buffer to allow rendering to continue even if the display has not finished using the previous frame.
+
+### Hardware Support
+
+Modern GPUs implement double buffering as part of the graphics pipeline and swap chain systems used by graphics APIs.
+
+---
+
+## **Related**
+
+* [[Frame Buffer]]
+* [[Rasterization]]
+* [[OpenGL]]
+* [[Rendering Pipeline]]
+* [[VSync]]
+
+---
+
+## **One Line Recall**
+
+Double buffering prevents flickering by rendering frames in a back buffer and swapping it with the front buffer once rendering is complete.
