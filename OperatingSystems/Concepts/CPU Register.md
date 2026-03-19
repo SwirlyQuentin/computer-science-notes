@@ -55,7 +55,7 @@ Example uses:
 These have specific roles:
 
 - **[[Program Counter]]** → address of next instruction
-- **Stack Pointer (SP)** → top of the execution stack
+- **Stack Pointer (SP)** → top of the [[execution stack]]
 - **Frame/Base Pointer (FP/BP)** → tracks function stack frames
 - **Status/Flag Register** → holds condition flags (zero, carry, overflow)
 

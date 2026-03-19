@@ -29,7 +29,7 @@ Since multiple processes compete for the CPU, the OS must:
 
 - Distribute CPU time fairly
 - Maintain system responsiveness
-- Enforce priority rules
+- Enforce [[Process Priority|priority]] rules
 - Prevent starvation
 - Optimize performance
 
@@ -72,7 +72,7 @@ Examples include:
 
 - First-Come, First-Served (FCFS)
 - Round Robin
-- Priority Scheduling
+- [[Process Priority|Priority]] Scheduling
 - Shortest Job First (SJF)
 
 Different algorithms optimize for different goals:
@@ -85,16 +85,16 @@ Different algorithms optimize for different goals:
 
 ### Preemptive vs Non-Preemptive Scheduling
 
-**Preemptive Scheduling**
+**[[Preemptive Scheduling]]**
 - The OS can interrupt a running process.
 - More responsive.
 - Used in modern operating systems.
 
-**Non-Preemptive Scheduling**
+**[[Non-Preemptive Scheduling]]**
 - A process keeps the CPU until it blocks or finishes.
 - Simpler but less responsive.
 
-Most modern systems use preemptive scheduling.
+Most modern systems use [[preemptive scheduling]].
 
 ---
 
@@ -118,7 +118,7 @@ The Process Scheduler enables:
 - Fair CPU allocation
 - Responsive user interfaces
 - Efficient resource utilization
-- Priority-based execution
+- [[Process Priority|Priority]]-based execution
 
 It is the decision-making engine of process management.
 

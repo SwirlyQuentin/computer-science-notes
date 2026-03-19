@@ -1,5 +1,5 @@
 **Definition:**
-OpenGL (Open Graphics Library) is a **cross-platform API for rendering 2D and 3D graphics**, primarily using **immediate mode** or modern shader-based pipelines.
+OpenGL (Open Graphics Library) is a **cross-platform API for rendering 2D and 3D graphics**, primarily using **[[immediate mode]]** or modern shader-based pipelines.
 
 ### **Core Idea**
 

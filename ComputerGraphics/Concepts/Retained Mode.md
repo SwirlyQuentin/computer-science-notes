@@ -104,7 +104,7 @@ The framework can optimize rendering by:
 
 This reduces the need for the application to manually manage rendering updates.
 
-### Comparison With Immediate Mode
+### Comparison With [[Immediate Mode]]
 
 - [[Immediate Mode]]: application sends draw commands every frame.
 - Retained Mode: system stores objects and manages rendering.

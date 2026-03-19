@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6124db626d34da8c",
+        "id": "c7a55768bbdbe053",
         "type": "tabs",
         "children": [
           {
-            "id": "b582de10d07af86f",
+            "id": "e0f22feb06900862",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Immediate Mode"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -41,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -95,17 +90,16 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Immediate Mode"
+              "title": "Backlinks"
             }
           },
           {
@@ -114,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerGraphics/Concepts/Immediate Mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Immediate Mode"
+              "title": "Outgoing links"
             }
           },
           {
@@ -176,8 +169,7 @@
               "title": "Connections"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,34 +191,34 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "b582de10d07af86f",
+  "active": "e0f22feb06900862",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/Vertex Ordering.md",
-    "ComputerGraphics/Concepts/Vertex (3D Graphics).md",
-    "ComputerGraphics/Concepts/Triangular Mesh.md",
-    "ComputerGraphics/Concepts/Triangle (3D Graphics).md",
-    "ComputerGraphics/Concepts/Surface Patch.md",
-    "ComputerGraphics/Concepts/Surface Normal (3D Graphics).md",
-    "ComputerGraphics/Concepts/Parametric Surface.md",
-    "ComputerGraphics/Concepts/Mesh Simplification.md",
-    "ComputerGraphics/Concepts/Face (3D. Graphics).md",
-    "ComputerGraphics/Concepts/Geometric Transformation.md",
-    "ComputerGraphics/Concepts/Back-Face Culling.md",
-    "ComputerGraphics/Concepts/WPF.md",
-    "ComputerGraphics/Concepts/Spline.md",
-    "ComputerGraphics/Concepts/Scene Graph.md",
-    "ComputerGraphics/Concepts/SVG.md",
-    "ComputerGraphics/Concepts/Projection Matrix.md",
-    "ComputerGraphics/Concepts/Parametric Curve.md",
-    "ComputerGraphics/Concepts/OpenGL.md",
-    "ComputerGraphics/Concepts/Midpoint Line Algorithm.md",
-    "ComputerGraphics/Concepts/Linear Interpolation.md",
-    "ComputerGraphics/Concepts/Interpolation.md",
-    "ComputerGraphics/Concepts/Hermite Curve.md",
-    "ComputerGraphics/Concepts/Double Buffer.md",
-    "ComputerGraphics/Concepts/DirectX.md",
-    "ComputerGraphics/Concepts/Control Points.md",
-    "ComputerGraphics/Concepts/Clip Space.md",
+    "ComputerGraphics/Concepts/Immediate Mode.md",
+    "ComputerGraphics/Concepts/Display List.md",
+    "ComputerGraphics/Concepts/Vertex Array.md",
+    "ComputerGraphics/Concepts/Vertex Buffer Object (VBO).md",
+    "ComputerGraphics/Lectures/11. Voxel Engine Basics.md",
+    "Concept Template.md",
+    "ChatGPT Prompts.md",
+    "ComputerGraphics/Concepts/Draw Call.md",
+    "ComputerGraphics/Concepts/Chunk Rebuilding.md",
+    "ComputerGraphics/Concepts/Chunk.md",
+    "ComputerGraphics/Concepts/Active Block Flag.md",
+    "ComputerGraphics/Concepts/Block Type.md",
+    "ComputerGraphics/Concepts/Block (Voxel Block Class).md",
+    "ComputerGraphics/Concepts/Voxel.md",
+    "OperatingSystems/Concepts/Deadline (Scheduling).md",
+    "OperatingSystems/Concepts/CPU Burst.md",
+    "OperatingSystems/Concepts/Arbitration Rule.md",
+    "OperatingSystems/Concepts/Process Priority.md",
+    "OperatingSystems/Concepts/Non-Preemptive Scheduling.md",
+    "OperatingSystems/Concepts/Preemptive Scheduling.md",
+    "OperatingSystems/Concepts/Short-Term Scheduling.md",
+    "OperatingSystems/Concepts/Long-Term Scheduling.md",
+    "OperatingSystems/Zybooks/3.1 Principles of Scheduling.md",
+    "OperatingSystems/Zybooks/2.6 Threads.md",
+    "OperatingSystems/Concepts/Multithreading.md",
+    "OperatingSystems/Concepts/Program Counter.md",
     "OperatingSystems/Assignments",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",

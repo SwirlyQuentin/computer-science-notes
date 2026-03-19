@@ -94,4 +94,4 @@ Without processes, the OS could not manage multiple running programs safely or e
 - [[CPU State]]
 - [[Context Switch]]
 - [[Process Scheduler]]
-- [[Threads]]
+- [[Thread]]

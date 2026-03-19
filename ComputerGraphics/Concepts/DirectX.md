@@ -82,7 +82,7 @@ A simple Direct3D program might:
 
 1. Create a vertex buffer containing triangle vertices.
 2. Define vertex and pixel shaders.
-3. Send a draw call to the GPU.
+3. Send a [[draw call]] to the GPU.
 
 The GPU then processes the triangle through the graphics pipeline and displays it on screen.
 

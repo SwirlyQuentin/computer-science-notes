@@ -87,7 +87,7 @@ If even one register were restored incorrectly, the process could:
 
 **CPU State**
 - Low-level hardware execution snapshot
-- Registers + Program Counter + flags
+- Registers + [[Program Counter]] + flags
 
 **Process State**
 - High-level scheduling status
@@ -104,7 +104,7 @@ The CPU State is essential for:
 
 - [[Context Switch]]
 - Multitasking
-- Preemptive scheduling
+- [[Preemptive scheduling]]
 - Process isolation
 - Reliable OS behavior
 

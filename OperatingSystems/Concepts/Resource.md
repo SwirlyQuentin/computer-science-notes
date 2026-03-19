@@ -73,7 +73,7 @@ Some resources exist in **multiple identical units**.
 Examples:
 - Memory buffers
 - Network sockets
-- Thread pools
+- [[Thread]] pools
 
 The OS tracks how many units are currently free.
 

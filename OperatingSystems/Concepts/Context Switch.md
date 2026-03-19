@@ -42,7 +42,7 @@ A context switch can happen when:
 
 - A timer interrupt fires (time slice expires)
 - A process enters the [[Process Blocked State||Blocked State]] (e.g., waiting for I/O)
-- A higher-priority process becomes ready
+- A higher-[[Process Priority|priority]] process becomes ready
 - The process voluntarily yields the CPU
 
 The decision is made by the [[Process Scheduler]].

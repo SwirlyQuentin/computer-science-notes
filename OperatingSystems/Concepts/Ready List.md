@@ -34,7 +34,7 @@ Many systems organize the ready list by **priority**.
 
 The scheduler typically chooses:
 ```
-highest priority process in RL
+highest [[Process Priority|priority]] process in RL
 ```
 
 ## **Example**

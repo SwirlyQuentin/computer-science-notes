@@ -59,8 +59,8 @@ No single algorithm optimizes all goals perfectly.
 
 #### 3. Priority Scheduling
 
-- Each process has a priority value.
-- Higher-priority processes run first.
+- Each process has a [[Process Priority|priority]] value.
+- Higher-[[Process Priority|priority]] processes run first.
 - Can be preemptive or non-preemptive.
 - May cause starvation without priority aging.
 
