@@ -30,7 +30,7 @@ Since multiple processes compete for the CPU, the OS must:
 - Distribute CPU time fairly
 - Maintain system responsiveness
 - Enforce [[Process Priority|priority]] rules
-- Prevent starvation
+- Prevent [[starvation]]
 - Optimize performance
 
 Without a scheduler, only one process could run.
@@ -70,15 +70,15 @@ The scheduler uses a [[Scheduling Algorithm]] to make decisions.
 
 Examples include:
 
-- First-Come, First-Served (FCFS)
-- Round Robin
+- First-Come, First-Served ([[FIFO Scheduling Algorithm|FCFS]])
+- [[RR Scheduling|Round Robin]]
 - [[Process Priority|Priority]] Scheduling
-- Shortest Job First (SJF)
+- [[SJF Scheduling Algorithm|Shortest Job First (SJF)]]
 
 Different algorithms optimize for different goals:
 - Fairness
 - Throughput
-- Response time
+- [[Response time]]
 - CPU utilization
 
 ---

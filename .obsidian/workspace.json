@@ -11,10 +11,14 @@
             "id": "e0f22feb06900862",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "OperatingSystems/Concepts/Process Synchronization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Process Synchronization"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OperatingSystems/Concepts/Process Synchronization.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Process Synchronization"
             }
           },
           {
@@ -193,32 +198,32 @@
   },
   "active": "e0f22feb06900862",
   "lastOpenFiles": [
-    "ComputerGraphics/Concepts/Immediate Mode.md",
-    "ComputerGraphics/Concepts/Display List.md",
-    "ComputerGraphics/Concepts/Vertex Array.md",
-    "ComputerGraphics/Concepts/Vertex Buffer Object (VBO).md",
-    "ComputerGraphics/Lectures/11. Voxel Engine Basics.md",
+    "OperatingSystems/Concepts/Race Condition.md",
+    "OperatingSystems/Concepts/Starvation.md",
+    "OperatingSystems/Concepts/Deadlock.md",
+    "OperatingSystems/Concepts/Mutual Exclusion.md",
+    "OperatingSystems/Concepts/Critical Section.md",
+    "OperatingSystems/Concepts/Concurrency.md",
+    "OperatingSystems/Concepts/Thread.md",
+    "OperatingSystems/Zybooks/4.1 Process Interactions.md",
+    "OperatingSystems/Concepts/Process Synchronization.md",
+    "OperatingSystems/Concepts/Kernel-Level Threads.md",
     "Concept Template.md",
     "ChatGPT Prompts.md",
-    "ComputerGraphics/Concepts/Draw Call.md",
-    "ComputerGraphics/Concepts/Chunk Rebuilding.md",
-    "ComputerGraphics/Concepts/Chunk.md",
-    "ComputerGraphics/Concepts/Active Block Flag.md",
-    "ComputerGraphics/Concepts/Block Type.md",
-    "ComputerGraphics/Concepts/Block (Voxel Block Class).md",
-    "ComputerGraphics/Concepts/Voxel.md",
-    "OperatingSystems/Concepts/Deadline (Scheduling).md",
-    "OperatingSystems/Concepts/CPU Burst.md",
-    "OperatingSystems/Concepts/Arbitration Rule.md",
-    "OperatingSystems/Concepts/Process Priority.md",
-    "OperatingSystems/Concepts/Non-Preemptive Scheduling.md",
-    "OperatingSystems/Concepts/Preemptive Scheduling.md",
-    "OperatingSystems/Concepts/Short-Term Scheduling.md",
-    "OperatingSystems/Concepts/Long-Term Scheduling.md",
+    "OperatingSystems/Concepts/Interactive Process.md",
+    "OperatingSystems/Concepts/Response Time.md",
+    "OperatingSystems/Concepts/Time Quantum.md",
+    "OperatingSystems/Concepts/FIFO Scheduling Algorithm.md",
+    "OperatingSystems/Concepts/RR Scheduling.md",
+    "OperatingSystems/Concepts/MLF Scheduling.md",
+    "OperatingSystems/Zybooks/3.3 Scheduling of Interactive Processes.md",
+    "OperatingSystems/Zybooks/3.2 Scheduling of Batch Processes.md",
+    "OperatingSystems/Concepts/Turnaround Time.md",
+    "OperatingSystems/Concepts/SRT Scheduling Algorithm.md",
+    "OperatingSystems/Concepts/SJF Scheduling Algorithm.md",
     "OperatingSystems/Zybooks/3.1 Principles of Scheduling.md",
-    "OperatingSystems/Zybooks/2.6 Threads.md",
-    "OperatingSystems/Concepts/Multithreading.md",
-    "OperatingSystems/Concepts/Program Counter.md",
+    "Untitled.md",
+    "OperatingSystems/Concepts/CPU Burst.md",
     "OperatingSystems/Assignments",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",

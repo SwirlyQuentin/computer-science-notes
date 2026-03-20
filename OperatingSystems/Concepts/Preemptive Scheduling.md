@@ -40,9 +40,9 @@ Benefits include:
 
 Examples of preemptive algorithms:
 
-* Round Robin
+* [[RR Scheduling|Round Robin]]
 * [[Process Priority|Priority]] Scheduling with preemption
-* Multilevel Feedback Queue
+* [[MLF Scheduling|Multilevel Feedback]] Queue
 
 ---
 
@@ -51,7 +51,7 @@ Examples of preemptive algorithms:
 ### Example 1: Timer Interrupt
 ```
 Running: P1
-Time quantum = 10ms
+[[Time quantum]] = 10ms
 ```
 
 After 10ms:

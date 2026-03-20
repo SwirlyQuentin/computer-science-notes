@@ -33,14 +33,14 @@ Non-preemptive scheduling is used in:
 
 Common non-preemptive algorithms:
 
-* First-Come First-Served (FCFS)
+* First-Come First-Served ([[FIFO Scheduling Algorithm|FCFS]])
 * Non-preemptive [[Process Priority|priority]] scheduling
 
 ---
 
 ## **Example**
 
-### Example 1: FCFS Scheduling
+### Example 1: [[FIFO Scheduling Algorithm|FCFS]] Scheduling
 
 Ready List:
 ```

@@ -28,10 +28,10 @@ Common system goals include:
 
 - **Fairness** -> Every process gets CPU time
 - **Throughput** -> Maximize number of completed processes
-- **Response Time** -> Fast reaction for interactive tasks
-- **Turnaround Time** -> Minimize total time from start to finish
+- **[[Response Time]]** -> Fast reaction for interactive tasks
+- **[[Turnaround Time]]** -> Minimize total time from start to finish
 - **CPU Utilization** -> Keep CPU busy as much as possible
-- **Avoid Starvation** -> Prevent processes from waiting forever
+- **Avoid [[Starvation]]** -> Prevent processes from waiting forever
 
 No single algorithm optimizes all goals perfectly.
 
@@ -39,7 +39,7 @@ No single algorithm optimizes all goals perfectly.
 
 ### Common Scheduling Algorithms
 
-#### 1. First-Come, First-Served (FCFS)
+#### 1. First-Come, First-Served ([[FIFO Scheduling Algorithm|FCFS]])
 
 - Processes run in the order they arrive.
 - Non-preemptive.
@@ -48,12 +48,12 @@ No single algorithm optimizes all goals perfectly.
 
 ---
 
-#### 2. Shortest Job First (SJF)
+#### 2. [[SJF Scheduling Algorithm|Shortest Job First (SJF)]]
 
 - Process with shortest expected runtime runs first.
-- Minimizes average turnaround time.
+- Minimizes average [[turnaround time]].
 - Hard to implement because runtime must be estimated.
-- Can cause starvation of long jobs.
+- Can cause [[starvation]] of long jobs.
 
 ---
 
@@ -62,17 +62,17 @@ No single algorithm optimizes all goals perfectly.
 - Each process has a [[Process Priority|priority]] value.
 - Higher-[[Process Priority|priority]] processes run first.
 - Can be preemptive or non-preemptive.
-- May cause starvation without priority aging.
+- May cause [[starvation]] without priority aging.
 
 ---
 
-#### 4. Round Robin (RR)
+#### 4. [[RR Scheduling|Round Robin]] (RR)
 
 - Each process gets a fixed time slice (quantum).
 - Preemptive.
 - Fair and widely used.
 - Smaller time slice → more context switches.
-- Larger time slice → behaves more like FCFS.
+- Larger time slice → behaves more like [[FIFO Scheduling Algorithm|FCFS]].
 
 ---
 

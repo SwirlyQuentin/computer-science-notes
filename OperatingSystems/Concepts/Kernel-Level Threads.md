@@ -36,7 +36,7 @@ KLTs allow the OS to:
 * Run threads on multiple CPUs
 * Prevent entire processes from blocking when one thread blocks
 
-This improves concurrency and system responsiveness.
+This improves [[concurrency]] and system responsiveness.
 
 ---
 

@@ -73,7 +73,7 @@ Lower number = higher priority.
 
 Operating systems may adjust priorities to:
 
-* prevent **starvation**
+* prevent **[[starvation]]**
 * favor **interactive tasks**
 * penalize CPU-heavy tasks
 

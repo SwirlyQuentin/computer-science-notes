@@ -32,7 +32,7 @@ Because of this frequency, short-term scheduling must be **very efficient**.
 Short-term scheduling is used to:
 
 * Allocate CPU time among processes
-* Implement scheduling algorithms like First-Come First-Served, Round Robin, and [[Process Priority|Priority]] Scheduling
+* Implement scheduling algorithms like [[FIFO Scheduling Algorithm|First-Come First-Served]], [[RR Scheduling|Round Robin]], and [[Process Priority|Priority]] Scheduling
 * Ensure fair CPU usage
 * Improve system responsiveness
 

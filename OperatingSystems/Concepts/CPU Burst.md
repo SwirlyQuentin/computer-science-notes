@@ -36,7 +36,7 @@ CPU burst information helps scheduling algorithms:
 * optimize CPU usage
 * improve responsiveness
 
-Algorithms such as **Shortest Job First (SJF)** rely heavily on CPU burst estimates.
+Algorithms such as **Shortest Job First ([[SJF Scheduling Algorithm|SJF]])** rely heavily on CPU burst estimates.
 
 ---
 
@@ -66,7 +66,7 @@ P1: CPU burst 10ms
 P2: CPU burst 3ms
 ```
 
-Shortest Job First runs:
+[[SJF Scheduling Algorithm|Shortest Job First]] runs:
 ```
 P2 → P1
 ```

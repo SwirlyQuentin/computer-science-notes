@@ -18,8 +18,8 @@ Since the scheduler cannot differentiate them by priority, it must apply a **sec
 
 Common arbitration strategies include:
 
-* First-Come First-Served
-* Round Robin
+* [[FIFO Scheduling Algorithm|First-Come First-Served]]
+* [[RR Scheduling|Round Robin]]
 * Random selection
 
 ---
@@ -42,12 +42,12 @@ They prevent the scheduler from making **arbitrary decisions**.
 | P2      | 2        |
 | P3      | 3        |
 
-If arbitration uses **FCFS**:
+If arbitration uses **[[FIFO Scheduling Algorithm|FCFS]]**:
 ```
 P1 → P2 → P3
 ```
 
-If arbitration uses **Round Robin**:
+If arbitration uses **[[RR Scheduling|Round Robin]]**:
 ```
 P1 → P2 → P1 → P2 ...
 ```
