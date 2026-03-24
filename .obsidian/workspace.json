@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c7a55768bbdbe053",
+        "id": "61f364891b2ef8a3",
         "type": "tabs",
         "children": [
           {
-            "id": "e0f22feb06900862",
+            "id": "897926f90a54ec68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerGraphics/Lectures/12. Texture Mapping.md",
+                "file": "Project Ideas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "12. Texture Mapping"
+              "title": "Project Ideas"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "7be96393fab0afa8",
@@ -197,10 +196,15 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "e0f22feb06900862",
+  "active": "897926f90a54ec68",
   "lastOpenFiles": [
-    "OperatingSystems/Zybooks/4.5 Classic Synchronization Problems.md",
+    "ComputerGraphics/CodeExamples/3D Viewing Camera.md",
+    "Project Ideas.md",
+    "ComputerGraphics/Lectures/11. Voxel Engine Basics.md",
     "ComputerGraphics/Lectures/12. Texture Mapping.md",
+    "ComputerGraphics/Lectures/13. Noise Generation.md",
+    "ComputerGraphics/CodeExamples/Line Algorithm Psuedocode.md",
+    "OperatingSystems/Zybooks/4.5 Classic Synchronization Problems.md",
     "OperatingSystems/Zybooks/4.4 Monitors.md",
     "OperatingSystems/Zybooks/4.3 Implementation of Semaphores.md",
     "OperatingSystems/Zybooks/4.2 Semaphores.md",
@@ -220,11 +224,6 @@
     "OperatingSystems/Concepts/Response Time.md",
     "OperatingSystems/Concepts/Time Quantum.md",
     "OperatingSystems/Concepts/FIFO Scheduling Algorithm.md",
-    "OperatingSystems/Concepts/RR Scheduling.md",
-    "OperatingSystems/Concepts/MLF Scheduling.md",
-    "OperatingSystems/Zybooks/3.3 Scheduling of Interactive Processes.md",
-    "OperatingSystems/Zybooks/3.2 Scheduling of Batch Processes.md",
-    "OperatingSystems/Concepts/Turnaround Time.md",
     "OperatingSystems/Assignments",
     "GameProgrammingPatterns/Concepts",
     "GameProgrammingPatterns/Chapters",
